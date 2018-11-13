@@ -3,8 +3,8 @@
 Lien du deploiment https://louisvuitton.netlify.com
 
 
-Membres :   Diarit Salihaj
-            Nicolas Chamaillard
-            Xavier Mediavilla Diez
-            Wilem Djennane
-            Louis Zawadka
+Membres :   Diarit Salihaj,
+            Nicolas Chamaillard,
+            Xavier Mediavilla Diez,
+            Wilem Djennane,
+            Louis Zawadka,
