@@ -3,14 +3,15 @@ body {
   color: white;  
   font-family: 'Roboto', sans-serif;;
 }
-.introduction {
+
+  /*display: flex;
+  justify-content: center;
+}*/
+.img1 {
+  height: 400px;
   display: flex;
-  margin-top: 80px;
-  justify-content: center
-}
-.image-premier-parfum {
-  height: 600px;
-  width: 600px;
+  justify-content:center;
+  
 }
 /* MENU NAV BAR BURGER */
 nav {
@@ -56,8 +57,8 @@ nav.is-open {
 .open-icon,
 .open-icon::before,
 .open-icon::after {
-  width: 100px;
-  height: 40px;
+  width: 35px;
+  height: 4px;
   background: #b59d92;
   
 }
