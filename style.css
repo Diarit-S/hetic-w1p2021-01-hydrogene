@@ -1,11 +1,16 @@
 body {
   background-color: #150d0f;
   color: white;  
+  font-family: 'Roboto', sans-serif;;
 }
 .introduction {
   display: flex;
   margin-top: 80px;
   justify-content: center
+}
+.image-premier-parfum {
+  height: 600px;
+  width: 600px;
 }
 /* MENU NAV BAR BURGER */
 nav {
@@ -51,8 +56,8 @@ nav.is-open {
 .open-icon,
 .open-icon::before,
 .open-icon::after {
-  width: 35px;
-  height: 4px;
+  width: 100px;
+  height: 40px;
   background: #b59d92;
   
 }
@@ -140,11 +145,11 @@ li:not(:last-child) {
     transform: none;
     height: 100%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   
   li {
-    font-size: 40px;
+    font-size: 20px;
    
   }
   
