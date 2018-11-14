@@ -1,11 +1,29 @@
-
-body {
-  background-color: #150d0f;
-  color: white;  
-  font-family: 'Roboto', sans-serif;
+@font-face {
+  font-family: 'Roboto-LightItalic';
+  src: url(font/Roboto-LightItalic.ttf);
 }
-img {
+body {
+  background-color: #FFFFFF;
+  color: black;  
+  font-family: 'Roboto', sans-serif;;
+}
+
+.prod1 {
+
+  margin-top: 50px;
   max-width: 100%;
+  
+}
+
+p{
+
+  margin : auto;
+  top: 35%;
+  text-align: center;
+  width: 80%;
+ 
+}
+
 }
 .introduction {
   display: flex;
@@ -44,7 +62,7 @@ header {
 }
 body {
   display: flex;
-  justify-content: center;  
+  justify-content: center  
 }
 .bgfleur {
   height: 600px;
@@ -67,8 +85,8 @@ body {
 .bois2 {
   position: relative;
 }
-.description1 {
-  font-weight: 80;
+p {
+  font-family: 'Roboto-LightItalic';
   position: absolute;
   top: 47%;
   left: 8%;
