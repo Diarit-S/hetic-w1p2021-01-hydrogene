@@ -7,9 +7,9 @@ open.addEventListener('click', function() {
 
 
 
-var item = document.getElementById('item');
-var item2 = document.getElementById('item2');
+var menu2 = document.getElementById('menu2');
+var product = document.getElementById('product');
 
-item.addEventListener('click', function() {
-	item2.classListe.toggle('item-is-open');
+product.addEventListener('click', function() {
+  menu2.classList.toggle('is-open');
 });
