@@ -47,7 +47,6 @@ body {
   justify-content: center;  
 }
 .bgfleur {
-  height: 600px;
   width: auto;
   z-index: -2;
 }
@@ -84,7 +83,16 @@ body {
   width: 80%;
   transform: translateY(-50%);
 }
-
+.bouton1 {
+  position: absolute;
+  top: 75%;
+  left: 4%;
+  text-align: center;
+  width: 80%;
+  transform: translateY(-50%);
+  border: solid white 2px;
+  padding: 20px;
+}
 
 /* MENU NAV BAR BURGER */
 nav {
