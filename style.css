@@ -1,84 +1,219 @@
-<!DOCTYPE html>
-<html lang="fr">
+body {
+  background-color: #150d0f;
+  color: white;  
+  font-family: 'Roboto', sans-serif;;
+}
+img {
+  max-width: 100%;
+}
+.introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+.dispologo {
+  display: flex;
+  position: fixed;
+  left: 31.5%;
+}
+.logo2 {
+  top: 223px;
+  position: absolute;
+  width: 171px;
+  height: 175px;
+  z-index: -1;
+}
+.logo {
+   position: fixed; 
+   top: 13px;
+   width: 126px;
+   height: 16px;
+}
+.menu1 {
+  font-size: 20px;
+  top: 0;
+  left: 0;
+}
+body {
+  display: flex;
+  justify-content: center  
+}
+.bgfleur {
+  height: 600px;
+  width: auto;
+  z-index: -2;
+}
+.produit {
+  display: flex;
+  
+}
+.imageproduit1 {
+  height: auto;
+  width: 100%;
+}
 
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Louis Vuitton</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
-  <script defer type="text/javascript" src="script.js"></script>
-</head>
+/* MENU NAV BAR BURGER */
+nav {
+  position: fixed;
+  top: 0;
+  left: -5px;
+  background-color: #150d0f;
+  color: #ffffff;
+  font-size: 20px;
+  height: 50px;
+  width: 1500px;
+  overflow: hidden;
+  transition: height 0.7s, width 0.5s, left 0.5s, bottom 0.5s, border-radius 0.3s;
+}
+
+nav.is-open {
+  height: 100vh;
+  width: 100vw;
+  border-radius: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  top: -3px;
+  left: 4px;
+}
+
+.open-icon {
+  transition: background-color 0.3s;
+  
+}
+
+.open-icon,
+.open-icon::before,
+.open-icon::after {
+  width: 21px;
+  height: 2px;
+  background: #ffffff;
+  
+}
+
+.open-icon::before,
+.open-icon::after {
+  content: '';
+  display: block;
+  transition: transform 0.8s;
+}
+
+.open-icon::before {
+  transform: translateY(-8px);
+}
+
+.open-icon::after {
+  transform: translateY(6px);
+}
+
+nav.is-open .open-icon {
+  background-color: transparent;
+}
+
+nav.is-open .open-icon::before {
+  transform: translateY(1px) rotate(135deg);
+}
+
+nav.is-open .open-icon::after {
+  transform: translateY(-1px) rotate(-135deg);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transform: translateY(-50vh);
+  opacity: 0;
+  transition: transform 0.7s, opacity 0.7s;
+}
+
+nav.is-open ul {
+  transform: none;
+  opacity: 1;
+}
+
+nav:not(.is-open) ul {
+  pointer-events: none;
+}
+
+li {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: Helvetica;
+  
+}
+
+li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 480px) {
+  nav {
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    width: 100%;
+  }
+  
+  nav.is-open {
+    height: 50px;
+  }
+  
+  .open {
+    display: none;
+  }
+  
+  ul {
+    position: static;
+    opacity: 1;
+    transform: none;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  li {
+    font-size: 20px;
+  }
+  li:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
 
 
-<body>
-
-  <header>
-
-    <nav id="nav">
-
-      <ul class="menu">
-        
-        <li class="menu1">
-          Accueil</li>
-        <li class="menu2" id="menu2"><p id="product">Produit</p>
-        <ul>
-          <li>Produit 1</li>
-        </ul></li>
-        <li class="menu3">Presse</li>
-
-      </ul>
-
-      <div class="open" id="open">
-
-        <div class="open-icon"></div>
-
-      </div>  
-
-    </nav> 
-
-    <section class="dispologo"> <img class="logo" src="images/logo LV.png"></section> 
-
-  </header>
+/* FIN NAV MENU BURGER */
 
 
 
-  <section class="introduction">
-    
-    <img class="bgfleur" src="images/fleur-mobile.jpg">  
-    <img class="logo2" src="images/lv-bg.png">
-    <img class="imageproduit1" src="images/parfum1.jpg"> 
+li ul {
+  display: none;
+}
 
-  </section>
-
-  <section>
-      <img class="imageproduit2">
-  </section>
-
-    
-  <section>
-    <img class="imageproduit3">
-  </section>
-
-  <aside>
-    <img class="imagearticle1">
-    <h2 class="article1texte"></h2>
-  </aside>
-
-  <aside>
-    <img class="imagearticle2">
-    <h2 class="article2texte"></h2>
-  </aside>
-
-
-  <footer>
-
-  </footer>
-
-</body>
-
-
-
-
-</html>
+li.is-open ul {
+  display: block;
+}
