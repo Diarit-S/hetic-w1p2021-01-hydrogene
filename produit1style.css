@@ -1,121 +1,80 @@
-@font-face {
-  font-family: 'Roboto-LightItalic';
-  src: url(font/Roboto-LightItalic.ttf);
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: black;  
-  font-family: 'Roboto', sans-serif;;
-}
-
-.prod1 {
-
-  margin-top: 50px;
-  max-width: 100%;
-  
-}
-
-p{
-
-  margin : auto;
-  top: 35%;
-  text-align: center;
-  width: 80%;
- 
-}
-
-}
-.introduction {
+  font-family: 'Roboto', sans-serif;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  flex-direction: column;
+  justify-content: center; 
+}
+img {
+  max-width: 100%;
 }
 
 header {
   display: flex;
   justify-content: center;
 }
-.dispologo {
-  display: flex;
-  position: fixed;
-  left: 31%;
-}
-.logo2 {
-  top: 223px;
-  position: absolute;
-  width: 171px;
-  height: 175px;
-  z-index: -1;
-}
+
 .logo {
-   position: fixed; 
-   top: 13px;
    width: 126px;
    height: 16px;
-}
-.menu1 {
-  font-size: 20px;
-  top: 0;
-  left: 0;
-}
-body {
-  display: flex;
-  justify-content: center  
-}
-.bgfleur {
-  height: 600px;
-  width: auto;
-  z-index: -2;
-}
-.produit {
-  display: flex;
-  
-}
-.imageproduit1 {
-  height: auto;
-  width: 100%;
-}
-.bois {
-  height: auto;
-  width: 100%;
-  z-index: -2;
-}
-.bois2 {
-  position: relative;
-}
-p {
-  font-family: 'Roboto-LightItalic';
-  position: absolute;
-  top: 47%;
-  left: 8%;
-  text-align: center;
-  width: 80%;
-  transform: translateY(-50%);
-}
-.bois2 h2 {
-  position: absolute;
-  top: 20%;
-  left: 8%;
-  text-align: center;
-  width: 80%;
-  transform: translateY(-50%);
+   z-index: 10;
 }
 
+.content {
+  
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h1 {
+  margin: 20px;
+  font-weight: bold;
+}
+
+.subcontent {
+  width : 50%;
+}
+
+.page p {
+  
+  font-family: Roboto;
+  line-height: 1.5;
+  text-align: center;
+  padding: 3em;
+  font-size: 14px;
+}
+footer{
+
+  color:white;
+  background: #150d0f;
+  height : 3.5em;
+  width : 100%;
+  display : flex;
+  justify-content: center;
+  align-items : center;
+}
 
 /* MENU NAV BAR BURGER */
 nav {
   position: fixed;
   top: 0;
-  left: -5px;
+  left: 0;
   background-color: #150d0f;
   color: #ffffff;
   font-size: 20px;
   height: 42px;
-  width: 1500px;
+  width: 100%;
   overflow: hidden;
   transition: height 0.7s, width 0.5s, left 0.5s, bottom 0.5s, border-radius 0.3s;
+  z-index: 25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav.is-open {
@@ -124,6 +83,12 @@ nav.is-open {
   border-radius: 0;
   left: 0;
   bottom: 0;
+  z-index: 25;
+}
+
+nav.is-open > .dispologo {
+  position: fixed;
+  top: 15px;
 }
 
 .open {
@@ -243,6 +208,7 @@ li:not(:last-child) {
 .menu3.is-open ul {
   display: block; 
 }
+
 /* FIN SUBCLASS */
 
 @media (min-width: 480px) {
@@ -277,13 +243,7 @@ li:not(:last-child) {
   li:not(:last-child) {
     margin-bottom: 0;
   }
-  body {
-    background-image: url(images/bgfleur.jpg);
-  }
 }
 
 
 /* FIN NAV MENU BURGER */
-
-
-
