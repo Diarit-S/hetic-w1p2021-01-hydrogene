@@ -24,12 +24,12 @@ header {
   position: absolute;
   width: 171px;
   height: 175px;
-  z-index: -1;
+
 }
 .logo {
    width: 126px;
    height: 16px;
-   z-index: 25;
+   z-index: 10;
 }
 .menu1 {
   font-size: 20px;
@@ -136,7 +136,7 @@ nav {
   width: 100%;
   overflow: hidden;
   transition: height 0.7s, width 0.5s, left 0.5s, bottom 0.5s, border-radius 0.3s;
-  z-index: 10;
+  z-index: 25;
   display: flex;
   justify-content: center;
   align-items: center;
