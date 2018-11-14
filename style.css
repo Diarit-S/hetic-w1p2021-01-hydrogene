@@ -54,7 +54,7 @@ body {
   display: flex;
   
 }
-.imageproduit1 {
+.imageproduit {
   height: auto;
   width: 100%;
 }
@@ -63,8 +63,41 @@ body {
   width: 100%;
   z-index: -2;
 }
+.fleur2 {
+  position: relative;
+  z-index: -1;
+}
+.fleur2 h2 {
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  text-align: center;
+  width: 80%;
+  transform: translateY(-50%);
+}
+.muguet2 {
+  position: relative;
+  z-index: -1;
+}
+.muguet2 h2 {
+  position: absolute;
+  top: 16%;
+  left: 8%;
+  text-align: center;
+  width: 80%;
+  transform: translateY(-50%);
+}
 .bois2 {
   position: relative;
+  z-index: -1;
+}
+.bois2 h2 {
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  text-align: center;
+  width: 80%;
+  transform: translateY(-50%);  
 }
 .description1 {
   font-weight: 80;
@@ -75,17 +108,10 @@ body {
   width: 80%;
   transform: translateY(-50%);
 }
-.bois2 h2 {
-  position: absolute;
-  top: 20%;
-  left: 8%;
-  text-align: center;
-  width: 80%;
-  transform: translateY(-50%);
-}
+
 .bouton1 {
   position: absolute;
-  top: 75%;
+  top: 80%;
   left: 4%;
   text-align: center;
   width: 80%;
