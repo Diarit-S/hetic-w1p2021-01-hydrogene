@@ -120,6 +120,15 @@ body {
   padding: 20px;
 }
 
+footer{
+  background: #150d0f;
+  height : 3.5em;
+  width : 100%;
+  display : flex;
+  justify-content: center;
+  align-items : center;
+}
+
 /* MENU NAV BAR BURGER */
 nav {
   position: fixed;
@@ -259,6 +268,7 @@ li:not(:last-child) {
 .menu3.is-open ul {
   display: block; 
 }
+
 /* FIN SUBCLASS */
 
 @media (min-width: 480px) {
