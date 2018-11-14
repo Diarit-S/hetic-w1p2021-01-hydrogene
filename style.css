@@ -44,7 +44,7 @@ body {
 }
 .bgfleur {
   height: 600px;
-  width: 320px;
+  width: auto;
   z-index: -2;
 }
 .produit {
