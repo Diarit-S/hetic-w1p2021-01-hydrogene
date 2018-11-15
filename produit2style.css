@@ -224,7 +224,9 @@ li:not(:last-child) {
   .subclass{
     position: absolute;
     background: #150d0f;
-
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
   }
 
   .content {
@@ -263,6 +265,29 @@ li:not(:last-child) {
     pointer-events: auto;
   
   }
+
+   /*-------Menu deroulant----------*/
+  .menu2.is-open ul{
+    height : 82px
+  
+  }
+
+  .menu2 ul{
+    display : inherit;
+  }
+
+
+  .menu3.is-open ul{
+    height : 60px
+  
+  }
+
+  .menu3 ul{
+    display: inherit;
+  }
+
+
+  /*----------Menu déroulant anim----------*/
 
   .menu3{
     pointer-events: auto;
