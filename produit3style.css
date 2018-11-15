@@ -214,19 +214,17 @@ li:not(:last-child) {
 
   body{
 
-    background-image: url(./images/bg-desert.png);
+    background-image: url(./images/bg-fleur.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color : white;
   }
 
-
-
   .subclass{
     position: absolute;
     background: #150d0f;
-    
+
   }
 
   .content {
@@ -248,7 +246,7 @@ li:not(:last-child) {
 
 .title {
   position : absolute;
-  top: 150px;
+  margin-top: 150px;
   left: 60%;
   color: white;
 }
@@ -293,7 +291,7 @@ li:not(:last-child) {
   grid-row: 1;
   position: inherit;
   margin : 10% auto;
- 
+  
 
   
 
