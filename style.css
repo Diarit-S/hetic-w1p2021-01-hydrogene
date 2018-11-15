@@ -125,6 +125,7 @@ body {
 
 .bouton1 {
   position: absolute;
+  display: block;
   top: 80%;
   left: 6%;
   text-align: center;
@@ -344,6 +345,12 @@ li:not(:last-child) {
     width: 100%;
   }
 
+  .subclass{
+    position: absolute;
+    background: #150d0f;
+
+  }
+
   .menu2{
     pointer-events: auto;
   
@@ -491,7 +498,6 @@ footer {
     position: static;
     opacity: 1;
     transform: none;
-    height: 100%;
     flex-direction: row;
     justify-content: space-evenly;
   }
