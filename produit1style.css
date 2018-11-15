@@ -45,19 +45,14 @@ header {
   font-family: Roboto;
   line-height: 1.5;
   text-align: center;
-  padding: 3em;
+  padding-left: 3em;
+  padding-right: 3em;
+  
   font-size: 14px;
 }
-footer{
 
-  color:white;
-  background: #150d0f;
-  height : 3.5em;
-  width : 100%;
-  display : flex;
-  justify-content: center;
-  align-items : center;
-}
+
+
 
 /* MENU NAV BAR BURGER */
 nav {
@@ -247,3 +242,53 @@ li:not(:last-child) {
 
 
 /* FIN NAV MENU BURGER */
+
+
+
+
+
+
+/*========FOOTER==========*/
+footer{
+ 
+  background: #000000;
+  height : 3.5em;
+  width : 100%;
+  display : flex;
+  justify-content: flex-start;
+  align-items : center;
+  margin-top : 30px;
+
+}
+
+.social{
+  width : 14px;
+  height: 14px;
+  margin: 10px;
+  margin-left: 20px
+}
+
+.facebook{
+  width : 8px;
+  height: 14px;
+  margin: 10px;
+  margin-left: 17px;
+}
+
+
+.twitter{
+  width : 17px;
+  height: 14px;
+  margin: 10px;
+
+}
+
+footer .copyright{
+  font-size : 10px;
+  margin-left: 20px;
+  color : white;
+  white-space: nowrap;
+}
+
+
+/*========FOOTER==========*/
