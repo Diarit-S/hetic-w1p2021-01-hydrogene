@@ -206,7 +206,7 @@ li:not(:last-child) {
 
 /* FIN SUBCLASS */
 
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   nav {
     top: 0;
     left: 0;

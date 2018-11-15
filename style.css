@@ -89,6 +89,22 @@ body {
   position: relative;
   z-index: 2;
 }
+
+.bois {
+  opacity: 0;
+}
+
+.fleur {
+  opacity: 0;
+}
+
+.muguet {
+  opacity: 0;
+}
+
+
+
+
 .bois2 h2 {
   position: absolute;
   top: 20%;
@@ -264,10 +280,15 @@ nav.is-open .open-icon::after {
   opacity: 0;
   transition: transform 0.7s, opacity 0.7s;
 }
+nav ul:nth-child(1) {
+  display: none;
+}
 
-nav.is-open ul {
-  transform: none;
-  opacity: 1;
+@media (max-width: 680px){
+  nav.is-open ul {
+    transform: none;
+    opacity: 1;
+  }
 }
 
 nav:not(.is-open) ul {
@@ -323,6 +344,27 @@ li:not(:last-child) {
     width: 100%;
   }
 
+  .menu2{
+    pointer-events: auto;
+  
+  }
+
+  .menu3{
+    pointer-events: auto;
+    
+
+  }
+
+  .fontarticle{
+    pointer-events: auto;
+    margin: 10px;
+  }
+
+    .fontproduct{
+    pointer-events: auto;
+    margin : 10px;
+  }
+
 .introduction {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -333,8 +375,9 @@ li:not(:last-child) {
   grid-column: 1 / span 2;
   grid-row: 1;
   position: inherit;
-  margin : 10%;
-  margin-left: 50%;
+  margin : 10% auto;
+  
+
   
 
 }
@@ -369,26 +412,67 @@ li:not(:last-child) {
   grid-column: 2;
 }
 
+.bois {
+  opacity: 1;
+}
+
+.fleur {
+  opacity: 1;
+}
+
+.muguet {
+  opacity: 1;
+}
+
 footer {
   grid-row: 5;
   grid-column: 1 / span 2;
+  justify-content: space-around;
 }
 
-.menu{
+.copyright {
+  font-size : 14px;
+}
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex; 
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-    transition: transform 0.7s, opacity 0.7s;
+.social{
+  width : 14px;
+  height: 14px;
+  
+  margin-left: 20px
+}
+
+.facebook{
+  width : 8px;
+  height: 14px;
+  
 }
 
 
+.twitter{
+  width : 17px;
+  height: 14px;
+  
+
+}
+
+  .menu{
+
+      position: fixed;
+      top: 20px;
+      left: 0;
+      display: flex; 
+      flex-direction: row;
+      height: 100vh;
+      width: 100vw;
+      transition: transform 0.7s, opacity 0.7s;
+      opacity: 1;
+      justify-content: space-around;
+
+  }
+
+  .menu1{
+    display: none;
+  }
 
 
   .bgfleur {
