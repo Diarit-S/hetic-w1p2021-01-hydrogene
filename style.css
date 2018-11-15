@@ -122,11 +122,36 @@ footer{
   height : 3.5em;
   width : 100%;
   display : flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items : center;
 
 }
 
+.social{
+  width : 14px;
+  height: 14px;
+  margin: 10px;
+  margin-left: 20px
+}
+
+.facebook{
+  width : 8px;
+  height: 14px;
+  margin: 10px;
+}
+
+
+.twitter{
+  width : 17px;
+  height: 14px;
+  margin: 10px;
+
+}
+
+.copyright{
+  font-size : 10px;
+  margin-left: 30px;
+}
 /* MENU NAV BAR BURGER */
 nav {
   position: fixed;
