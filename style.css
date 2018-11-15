@@ -325,16 +325,27 @@ li:not(:last-child) {
 .menu2 ul {
   display: none;  
 }
+.menu2 p {
+  text-align: center;
+}
 .menu2.is-open ul {
-  display: block;   
+  display: block; 
+  margin-left: 100px;  
+}
+
+
+.menu3 p{
+  text-align:center;
+}
+
+
+.menu3.is-open ul {
+  display: block; 
+  margin-left: 175px;
 }
 .menu3 ul {
   display: none;
 }
-.menu3.is-open ul {
-  display: block; 
-}
-
 /* FIN SUBCLASS */
 
 @media (min-width: 680px) {
